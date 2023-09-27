@@ -1,12 +1,15 @@
 import React from 'react';
 import GameContentSection from "./gameContentSection";
 import PlayerPanelSection from "./playerPanelSection";
+import MemuInfoSection from "./memuInfoSection";
 
-function MainPage(props) {
+const MainPage = (props) => {
     return (
-    <div className='flex w-screen h-screen '>
+    <div className='flex justify-between w-screen h-screen '>
+        <MemuInfoSection></MemuInfoSection>
         <GameContentSection></GameContentSection>
         <PlayerPanelSection></PlayerPanelSection>
+
     </div>
         );
 }

@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
-import GameContext from "./gameContext";
-import GameTitle from "./gameTitle";
-import ChoicesOption from "./choicesOption";
+import GameContext from "./gameContent/gameContext";
+import GameTitle from "./gameContent/gameTitle";
+import ChoicesOption from "./gameContent/choicesOption";
 
 function GameContentSection(props) {
     const gameScenarios = [
@@ -231,11 +231,13 @@ function GameContentSection(props) {
 
     const gameLog = []
 
-    const [gameScenario,setGameScenario ] = useState(gameScenarios[0])
+    const [gameScenario,setGameScenario] = useState(gameScenarios[0])
     const [gameContext,setGameContext] = useState(gameScenarios[0].text)
+
     const updateGameContext = (text) =>{
         setGameContext(gameContext+'\n'+text)
     }
+
     const clearGameContext = () =>{
         setGameContext('')
     }
@@ -249,9 +251,10 @@ function GameContentSection(props) {
             5. 랜덤 이벤트
          */
     }
+
     const choicesOptionEvent = (index) => {
         const nextScenarioId = gameScenario.options[index].nextScenarioId;
-        // console.dir(gameScenario)
+
         if (nextScenarioId) { //nextScenarioId 가 0이 아니면
             const nextScenario = gameScenarios.find((Scenario) => Scenario.scenarioId === nextScenarioId);
             setGameScenario(nextScenario)
@@ -263,11 +266,7 @@ function GameContentSection(props) {
     }
 
     return (
-        <div className='
-        border
-        max-w-md
-        flex-1 justify-between
-        flex flex-col'>
+        <div className='w-1/3 bg-gray-300 flex flex-col items-center justify-between p-4 max-w-lg'>
         <GameTitle></GameTitle>
         <GameContext context={gameContext}/>
         <ChoicesOption

@@ -1,15 +1,10 @@
 import React from 'react';
-import Inventory from "./inventory";
-import CharacterStates from "./characterStates";
+import Inventory from "./playerPanel/inventory";
+import CharacterStates from "./playerPanel/characterStates";
 
-function PlayerPanelSection(props) {
+const PlayerPanelSection = (props) => {
     return (
-        <div className='
-        border
-        max-w-md
-        flex-1 justify-between
-        flex flex-col
-        '>
+        <div className='bg-gray-400 w-1/3 p-4 pb-0 flex flex-col max-w-lg'>
             <CharacterStates></CharacterStates>
             <Inventory></Inventory>
         </div>

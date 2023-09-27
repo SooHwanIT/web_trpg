@@ -2,7 +2,7 @@ import React from 'react';
 
 function GameContext(props) {
 
-    return (<div className='border flex-1'>
+    return (<div className='bg-gray-500 rounded flex-auto my-4 snap-y'>
         <h1>context</h1>
         {props.context}
     </div>);

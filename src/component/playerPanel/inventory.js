@@ -4,7 +4,7 @@ function Inventory() {
 
 
     return (
-        <div className='border border-red-800 flex flex-col'>
+        <div className='w-full bg-gray-600 flex-auto rounded-t mt-8'>
             Inventory
             <div className='flex-1'>
 
