@@ -1,10 +1,10 @@
 import React from 'react';
 
-function GameContext(props) {
+function GameContext({context}) {
 
-    return (<div className='bg-gray-500 rounded flex-auto my-4 snap-y'>
+    return (<div className='bg-gray-100 rounded flex-auto my-2 snap-y whitespace-pre-wrap'>
         <h1>context</h1>
-        {props.context}
+        <p>{context}</p>
     </div>);
 }
 

@@ -4,7 +4,7 @@ function Inventory() {
 
 
     return (
-        <div className='w-full bg-gray-600 flex-auto rounded-t mt-8'>
+        <div className='w-full bg-black flex-auto rounded-t mt-4'>
             Inventory
             <div className='flex-1'>
 

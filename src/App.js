@@ -9,7 +9,7 @@ function App() {
 
 
     <div className="App">
-      <DndProvider backend={HTML5Backend}>
+      <DndProvider backend={HTML5Backend} >
         <MainPage></MainPage>
       </DndProvider>
     </div>

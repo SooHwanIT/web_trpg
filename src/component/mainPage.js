@@ -5,11 +5,10 @@ import MemuInfoSection from "./memuInfoSection";
 
 const MainPage = (props) => {
     return (
-    <div className='flex justify-between w-screen h-screen '>
+    <div className='flex justify-between w-screen h-screen'>
         <MemuInfoSection></MemuInfoSection>
         <GameContentSection></GameContentSection>
         <PlayerPanelSection></PlayerPanelSection>
-
     </div>
         );
 }

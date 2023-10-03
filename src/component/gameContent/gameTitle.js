@@ -2,7 +2,7 @@ import React from 'react';
 
 function GameTitle(props) {
     return (
-        <div className='w-full ml-auto h-12 rounded bg-gray-500 '>
+        <div className='w-full ml-auto h-12 rounded bg-gray-300 '>
             title logo
         </div>
     )
